@@ -10,7 +10,7 @@ const Slider = () => {
       description:
         "A methane-based alien with plant powers and the ability to ignite flames. Swampfire is covered with a tough, bark-like skin that makes him resistant to physical damage.",
       background: "from-[#0a0f2c] to-[#0d3b1f]",
-      accent: "#00ff88", // Green
+      accent: "#00ff88",
     },
     {
       name: "Humungousaur",
@@ -18,7 +18,7 @@ const Slider = () => {
       description:
         "A giant dinosaur-like alien with immense strength and durability. He can increase his body size up to nearly 60 feet.",
       background: "from-[#1a0f0f] to-[#4d1a1a]",
-      accent: "#ff6600", // Orange/Brown
+      accent: "#ff6600",
     },
     {
       name: "Big Chill",
@@ -26,7 +26,7 @@ const Slider = () => {
       description:
         "A moth-like alien with the power of intangibility and ice breath. Big Chill can phase through solid objects.",
       background: "from-[#0a0f2c] to-[#1e3c72]",
-      accent: "#00ccff", // Blue
+      accent: "#00ccff",
     },
   ];
 
