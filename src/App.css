@@ -1,2 +1,13 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+/* Custom theme for Orbitron */
+@theme {
+  --font-orbitron: "Orbitron", sans-serif;
+}
+
+:root {
+  background-color: black;
+  color: white;
+  font-family: var(--font-orbitron);
+}

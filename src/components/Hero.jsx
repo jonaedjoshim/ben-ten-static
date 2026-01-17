@@ -17,7 +17,6 @@ const Hero = () => {
 
   return (
     <div className="relative w-full h-screen bg-gradient-to-br from-[#04703d] to-black overflow-hidden flex flex-col items-center justify-center font-orbitron">
-      
       {/* Navbar-ta eikhane bose jabe */}
       <Navbar />
 
@@ -32,7 +31,7 @@ const Hero = () => {
           whileTap={{ cursor: "grabbing" }}
         >
           {repeatedAliens.map((src, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               className="group relative min-w-[250px] h-[350px] md:min-w-[350px] md:h-[500px] flex items-center justify-center shrink-0"
               initial={{ opacity: 0, y: 50 }}
@@ -47,31 +46,17 @@ const Hero = () => {
                 src={src}
                 alt={`Alien ${i + 1}`}
                 className="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(0,255,136,0.3)] z-10"
-                whileHover={{ 
-                  scale: 1.15, 
+                whileHover={{
+                  scale: 1.15,
                   rotate: [0, -2, 2, 0], // Choto ekta shake animation
-                  filter: "brightness(1.2) drop-shadow(0 0 25px #00ff88)" 
+                  filter: "brightness(1.2) drop-shadow(0 0 25px #00ff88)",
                 }}
                 transition={{ type: "spring", stiffness: 200 }}
               />
-
-              {/* DaisyUI Tooltip - Alien name show korar jonno (optional) */}
-              <div className="absolute bottom-0 opacity-0 group-hover:opacity-100 transition-opacity bg-black/50 backdrop-blur-md px-4 py-1 rounded-full text-[#00ff88] text-xs tracking-[4px] uppercase border border-[#00ff88]/30">
-                Alien { (i % 6) + 1 }
-              </div>
             </motion.div>
           ))}
         </motion.div>
       </div>
-
-      {/* Floating Indicator */}
-      <div className="absolute bottom-12 flex flex-col items-center gap-2">
-        <p className="text-white/40 text-[10px] tracking-[5px] uppercase animate-pulse font-bold">
-          Swipe to Scan Aliens
-        </p>
-        <div className="w-1 h-12 bg-gradient-to-b from-[#00ff88] to-transparent rounded-full"></div>
-      </div>
-
     </div>
   );
 };
