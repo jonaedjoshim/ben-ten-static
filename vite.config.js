@@ -4,8 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(), // Eita add kora dorkar v4 er jonno
-  ],
+  // Tomar repo-r nam 'ben-ten-static' tai ekhane sheta add kora holo
+  base: "/ben-ten-static/",
+  plugins: [react(), tailwindcss()],
 });
